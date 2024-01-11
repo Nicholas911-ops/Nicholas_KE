@@ -5,7 +5,7 @@
     --bs-body-font-family: 'Montserrat', sans-sserif;
 }
 .section-padding{
-    padding: 70px 0;
+    padding: 40px 0;
 }
 .carousel-item{
     height:100vh;
@@ -119,6 +119,10 @@
 .team.card{
     box-shadow: 15px 15px 40px rgba(0, 0, 0,0.15);
 }
+.desc{
+    font-size: 25px;
+}
+
 
 
 
@@ -139,6 +143,9 @@
       .img-area img{
         width:100%;
       }
+      .desc{
+    font-size: 22px;
+     }
 }
 @media only screen and (max-width: 767px){
      .navbar nav{
@@ -166,7 +173,9 @@
       .card{
         margin-bottom: 30px;
       }
-      
+      .desc{
+    font-size: 19px;
+      }
 
 }
     
