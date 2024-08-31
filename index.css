@@ -70,6 +70,26 @@
     background-color:#F6F6F6;
 }
 
+/*my phot animation css*/
+.animated {
+    animation-delay: 2s; /* Add a delay before the animation starts */
+  }
+  
+  #animated-photo {
+    animation: photo-animation 3s ease-in-out infinite; /* Infinite animation loop */
+  }
+  
+  @keyframes photo-animation {
+    0% {
+      transform: scale(1); /* Start at normal size */
+    }
+    50% {
+      transform: scale(1.1); /* Zoom in slightly at the middle */
+    }
+    100% {
+      transform: scale(1); /* Return to normal size at the end */
+    }
+  }
 
         /* Style for the "skills" section */
         .skills {
@@ -120,7 +140,7 @@
     box-shadow: 15px 15px 40px rgba(0, 0, 0,0.15);
 }
 .desc{
-    font-size: 25px;
+    font-size:20px;
 }
 
 

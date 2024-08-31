@@ -15,11 +15,17 @@
     </script>
 
 </head>
-   <body>
-       
-  <nav class="navbar p-2  navbar-expand-lg navbar-light  position-absolute start-0 top-0 end-0 fixed-top" style="background-color: #020329;">
-   <div class="container">
-    <a class="navbar-brand" href="#"><span class="btn text-primary ">Nicholas KE</span></a>
+  <body>   
+    <nav class="navbar p-2 navbar-expand-lg navbar-light position-absolute start-0 top-0 end-0 fixed-top" style="background-color: #020329;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <span class="btn text-primary">
+              <img src="logo11.png" alt="Your Logo" class="logo-image">
+              Nicholas KE
+            </span>
+          </a>
+          </div>
+      </nav>
 
     <button class="navbar-toggler text-blue" type="button" data-bs-toggle="collapse"
      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
@@ -53,48 +59,395 @@
   </div>
 </nav>
 
-<div class="container text-center">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="card custom-card">
-          <img src="images/comp.jpg" alt="Card 1" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Programming intellect</h5>
-            <p class="card-text">Unlock your potential with programming courses. Dive into the world of coding and technology, where innovation knows no bounds. Empower yourself with skills that drive the digital future. Start today!</p>
-          </div>
-        </div>
+<section id="home" class="home section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="desc">I'm a passionate web developer with a focus on creating innovative and user-friendly websites. I have a strong foundation in HTML, CSS, JavaScript, and popular frameworks like Bootstrap. I'm always eager to learn new technologies and stay up-to-date with the latest trends in web development.</p>
+        <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">Get in Touch</button>
       </div>
-      <div class="carousel-item">
-        <div class="card custom-card">
-          <img src="images/data.jpg" alt="Card 2" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Data Analytics</h5>
-            <p class="card-text">Embrace the power of data analytics. Explore insights hidden within data, and make informed decisions. Join data analytics courses to become a data-driven problem solver and gain a competitive edge</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card custom-card">
-          <img src="images/homework.jpg" alt="Card 3" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Online Opportunities</h5>
-            <p class="card-text">In today's digital age, countless online opportunities await. From remote work to e-learning, seize the chance to broaden your horizons, connect globally, and shape your future on your terms.</p>
-          </div>
+      <div class="col-md-6">
+        <img src="your-animated-photo.gif" alt="Your Animated Photo" class="img-fluid animated" id="animated-photo">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+          <a href="https://github.com/your-profile" target="_blank"><i class="bi bi-github text-dark mx-1"></i></a>
+          <a href="https://wa.me/yourphonenumber" target="_blank"><i class="bi bi-whatsapp text-dark mx-1"></i></a>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+  </div>
+</section>
+
+ <!-------skills -->
+ <section id="skills" class="skills section-padding">
+  <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+          <div class="section-header text-center pb-1 mt-2">
+            <h2>My Skills Closet</h2>
+              <p class="desc"><br>
+               I possess a strong foundation in digital marketing, content creation, and web development. With a particular emphasis on SEO optimization and social media management, I have honed my ability to drive online visibility and engagement. My expertise in these areas allows me to effectively create and implement strategies that help businesses achieve their marketing goals.</p> 
+             </div>
+             </div>
+          </div><br>
+
+           <div class="row">
+           <div class="col-md-4">
+           <div class="card skills-card">
+             <div class="card-body">
+               <h5 class="skills-heading">Web Development</h5>
+               <p class="card-text">Languages: HTML, CSS3, JavaScript</p>
+               <p class="card-text">Frameworks: Laravel, Bootstrap, Saas</p>
+               <div class="progress">
+                 <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="card skills-card">
+             <div class="card-body">
+               <h5 class="skills-heading">Database Management</h5>
+               <p class="card-text">Excel, Microsoft Access</p>
+               <div class="progress">
+                 <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="card skills-card">
+             <div class="card-body">
+               <h5 class="skills-heading">Software Development</h5>
+               <p class="card-text">Languages: PHP , Java</p>
+               <div class="progress">
+                 <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+   </div>
+ </section>
+
+<!-------services---->
+<section id="services" class="services section-padding">
+ <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+            <div class="section-header text-center pb-2 mt-3">
+              <h2>Our Services</h2>
+                <p class="desc"><br>
+             Learn the art of promoting businesses online with our Digital Marketing course. Explore SEO, social media, email marketing, and analytics.<br>
+             Gain practical skills to create effective digital campaigns, boost brand visibility, and drive conversions in the ever-evolving digital landscape.</p> 
+            </div>
+         </div>
+     </div><br> 
+     <div class="row">
+       <div class="col-12 col-md-12 col-lg-4">
+         <div class="card text-white text-center bg-dark pb-2" style="height: 520px;">
+           <div class="card-body">
+             <i class="bi bi-diagram-3-fill"></i>
+              <h3 class="card-tittle">Digital Marketing</h3><br>
+              <p class="lead">Digital marketing employs online channels like social media, SEO and email to engage audiences.
+                Data-driven strategies target specific demographics, measure performance, enhance brand visibility and customer acquisition. The following are some of the digital marketing learning sites that will get you an edge in the  market.</p><br><br>                
+
+                 <button id="udemy" class="btn btn-secondary text-dark">Udemy</button>
+                 <button id="coursera" class="btn btn-info text-dark" >Coursera</button>
+                 <button id="alison" class="btn btn-primary text-dark">Alison</button>
+
+                 <!-----the three buttons script-->
+         <script>
+                 document.getElementById("udemy").addEventListener("click", function() {
+                     window.location.href = "https://www.udemy.com/"; // Replace with the URL you want to open
+                 });
+
+                  document.getElementById("coursera").addEventListener("click", function() {
+                     window.location.href = "https://www.coursera.org/?cartId=337258529; "// Replace with the URL you want to open
+                 });
+
+                 document.getElementById("alison").addEventListener("click", function() {
+                     window.location.href =" https://alison.com/ "// Replace with the URL you want to open
+                 });
+
+         </script>
+           </div>
+         </div>
+       </div><br> 
+       <div class="col-12 col-md-12 col-lg-4">
+         <div class="card text-white text-center bg-dark pb-2" style="height: 520px;">
+           <div class="card-body">
+             <i class="bi bi-eject-fill"></i>
+              <h3 class="card-tittle">Software Development</h3><br>
+              <p class="lead">Software development creates applications through planning, coding, and testing. 
+               It ensures robust, secure, and reliable software, from mobile apps to complex enterprise systems, powering our digital world.The following are some of the website devops that will get you a  edge in the web development market.</p><br><br>   
+
+                 <button id="codeacademy" class="btn btn-secondary text-dark">Code Academy</button>
+                 <button id="freecodecamp" class="btn btn-info text-dark" >FreeCodeCamp</button>
+                 <button id="udacity" class="btn btn-primary text-dark">Udacity</button>
+
+                 <!-----the three buttons script-->
+         <script>
+                 document.getElementById("codeacademy").addEventListener("click", function() {
+                     window.location.href = "https://www.codecademy.com/ "// Replace with the URL you want to open
+                 });
+
+                  document.getElementById("freecodecamp").addEventListener("click", function() {
+                     window.location.href = "https://www.freecodecamp.org/" // Replace with the URL you want to open
+                 });
+
+                 document.getElementById("udacity").addEventListener("click", function() {
+                     window.location.href = "https://www.udacity.com/ "// Replace with the URL you want to open
+                 });
+
+         </script>
+
+
+           </div>
+         </div>
+       </div><br> 
+       <div class="col-12 col-md-12 col-lg-4">
+         <div class="card text-white text-center bg-dark pb-2" style="height: 520px;">
+           <div class="card-body">
+             <i class="bi bi-code"></i>
+              <h3 class="card-tittle">Website Development</h3><br>
+              <p class="lead"> Website development involves designing, coding, and maintaining websites. 
+               It aims for responsive design, fast loading, and security while considering SEO for better visibility, delivering seamless user experiences.The following are some of the software learning platforms that will get you an edge in the software development market.</p><br> 
+               
+                 <button id="inforworld" class="btn btn-secondary text-dark">Infoworld</button>
+                 <button id="devops" class="btn btn-info text-dark" >DevOPs.com</button>
+                 <button id="apiumhub" class="btn btn-primary text-dark">ApiumHub</button>
+
+                 <!-----the three buttons script-->
+         <script>
+                 document.getElementById("inforworld").addEventListener("click", function() {
+                     window.location.href = "https://www.infoworld.com/"; // Replace with the URL you want to open
+                 });
+
+                  document.getElementById("devops").addEventListener("click", function() {
+                     window.location.href = "https://devops.com/"; // Replace with the URL you want to open
+                 });
+
+                 document.getElementById("apiumhub").addEventListener("click", function() {
+                     window.location.href = " https://apiumhub.com/"; // Replace with the URL you want to open
+                 });
+
+         </script>
+
+           </div>
+         </div>
+       </div>
+     </div>
+ </div>
+</section>
+
+
+<!-------Portfolio---->
+
+<section id="portfolio" class="portfolio section-padding">
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+    <div class="section-header text-center pb-2 mt-3">
+       <h2>Our Projects</h2>
+         <p class="desc">At Nicholas Ke, we deliver unparalleled excellence to learners embarking on transformative journeys in web development, software development, and digital marketing. <br>
+           Our commitment to superior quality empowers students to excel in the dynamic world of technology and marketing. <br>
+           Join us for an exceptional educational experience.</p>
+    </div>
   </div>
 </div>
+<div class="row">
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center bg-white pb-2 " style="height: 580px;">
+      <div class="card-body text-dark">
+        <div class="img-area mb-4">
+          <img src="./images/beautydes.jpg" alt="" class="img-fluid">
+        </div>
+        <h3 class="card-tittle">NiKomatt- Wordpress(CMS) Website </h3>
+         <p class="lead">Nikomatt is your one-stop shop for all things cycling. Whether you're a seasoned pro or just starting out, we offer a wide range of bicycles, accessories, and gear to suit your needs.  Explore our online store to discover the perfect ride for your adventure.</p><br>
+          <button class="btn btn-primary tet-dark">Visit Site</button>
+      </div>
+    </div>
+  </div>
 
+<div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center bg-white pb-2" style="height: 580px;">
+      <div class="card-body text-dark">
+        <div class="img-area mb-4">
+          <img src="./images/junior.jpg" alt="" class="img-fluid">
+        </div>
+        <h3 class="card-tittle">Fithub - Fitness Web App</h3>
+         <p class="lead">FitHub is your all-in-one fitness companion. Our web app offers a seamless blend of e-commerce and personalized fitness guidance. Shop for top-quality fitness gear, access expert-crafted workout plans, and track your progress with detailed analytics. </p>
+          <button class="btn btn-primary tet-dark">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+ <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center bg-white pb-2" style="height: 58b0px;">
+      <div class="card-body text-dark">
+        <div class="img-area mb-4">
+          <img src="./images/webdes.jpg" alt="" class="img-fluid">
+        </div>
+        <h3 class="card-tittle">Nicholas KE Web DEvops </h3>
+         <p class="lead">Indulge in the delectable world of Nicholas Ke Affiliate Marketing. Savor the taste of success as you partner with us to reap lucrative rewards.</p>
+          <button class="btn btn-primary tet-dark" >Learn More</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-------Team---->
+
+<section id="team" class="team section-padding">
+<div class="container">
+ <div class="row">
+   <div class="col-md-12">
+     <div class="section-header text-center pb-2 mt-3">
+       <h2>Our Proficient Team</h2>
+         <p class="desc">Nicholas Ke boasts an exceptional team of developers proficient in web and software development, as well as affiliate marketing. <br>
+         Our experts, armed with cutting-edge skills, are the backbone of our innovation-driven success.</p>
+          
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="card text-center" style="height: 600px;">
+      <div class="card-body">
+        <img src="./images/nicholasmutinda.jpg" alt="" class="img-fluid rounded-circle">
+          <h3 class="card-tittle py-2">Nicholas Mutinda</h3>
+           <p class="card-text">Nicholas Mutinda is an accomplished full-stack developer known for crafting dynamic web applications with precision and creativity, demonstrating expertise in both frontend and backend development.</p><br>
+             <p class="socials">
+               <i class="bi bi-twitter-x text-dark mx-1 "></i>
+                <i class="bi bi-linkedin text-dark mx-1"></i>
+                <i class="bi bi-facebook text-dark mx-1 "></i>
+                <i class="bi bi-instagram text-dark mx-1"></i>
+             </p>
+      </div>
+    </div>
+  </div>
+   <div class="col-12 col-md-6 col-lg-3">
+    <div class="card text-center" style="height: 600px;">
+      <div class="card-body">
+        <img src="./images/littlekris.jpg" alt="" class="img-fluid rounded-circle">
+          <h3 class="card-tittle py-2">Little Kris</h3>
+           <p class="card-text"> As a proficient data analyst, Little Kris possesses a sharp analytical mind. He skillfully extracts actionable insights from intricate datasets, contributing valuable knowledge to inform strategic decisions.</p><br>
+             <p class="socials">
+               <i class="bi bi-twitter-x text-dark mx-1 "></i>
+                <i class="bi bi-linkedin text-dark mx-1"></i>
+                <i class="bi bi-facebook text-dark mx-1 "></i>
+                <i class="bi bi-instagram text-dark mx-1"></i>
+             </p>
+      </div>
+    </div>
+  </div>
+ <div class="col-12 col-md-6 col-lg-3">
+    <div class="card text-center" style="height: 600px;">
+      <div class="card-body">
+        <img src="./images/sean.jpg" alt="" class="img-fluid rounded-circle">
+          <h3 class="card-tittle py-2">Sean Mike</h3>
+           <p class="card-text">A seasoned front-end developer, Sean excels at designing visually engaging and user-centric interfaces. With a knack for creativity and technical precision, he transforms ideas into captivating web experiences..</p><br>
+             <p class="socials">
+               <i class="bi bi-twitter-x text-dark mx-1 "></i>
+                <i class="bi bi-linkedin text-dark mx-1"></i>
+                <i class="bi bi-facebook text-dark mx-1 "></i>
+                <i class="bi bi-instagram text-dark mx-1"></i>
+             </p>
+      </div>
+    </div>
+  </div>
+ <div class="col-12 col-md-6 col-lg-3">
+    <div class="card text-center" style="height: 600px;">
+      <div class="card-body">
+        <img src="./images/nicholaske.jpg" alt="" class="img-fluid rounded-circle">
+          <h3 class="card-tittle py-2">Nicholas Ke</h3>
+           <p class="card-text"> A UI/UX design virtuoso, Nicholas Ke specializes in creating seamless, intuitive user experiences. His designs harmonize aesthetics with functionality, ensuring users navigate digital landscapes effortlessly and enjoyably.</p><br>
+             <p class="socials">
+               <i class="bi bi-twitter-x text-dark mx-1 "></i>
+                <i class="bi bi-linkedin text-dark mx-1"></i>
+                <i class="bi bi-facebook text-dark mx-1 "></i>
+                <i class="bi bi-instagram text-dark mx-1"></i>
+             </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-----contact page-->
+<section id="contact" class="contact section-padding">
+ <div class="container">
+   <div class="row">
+     <div class="col-md-12">
+       <div class="section-header text-center pb-2 mt-3">
+         <h2>Contact Us</h2>
+         <p class="desc">Welcome to Nicholas Ke's world of exclusive digital marketing courses, cutting-edge software and website development, and stunning UI/UX design services.<br>
+           Reach out today to unlock your digital potential!
+         </p>
+       </div>
+     </div>
+   </div>
+   <div class="row m-0">
+     <div class="col-md-12 p-0 pt-4 pb-4">
+       <form id="contact-form" class="bg-light p-4 m-auto">
+         <div class="row">
+           <div class="col-md-12">
+             <div class="mb-3">
+               <input type="text" class="form-control" name="from_name" required placeholder="Your Full Name">
+             </div>
+           </div>
+           <div class="col-md-12">
+             <div class="mb-3">
+               <input type="email" class="form-control" name="from_email" required placeholder="Your email here">
+             </div>
+           </div>
+           <div class="col-md-12">
+             <div class="mb-3">
+               <textarea rows="3" class="form-control" name="message" required placeholder="Your message here"></textarea>
+             </div>
+           </div>
+           <button class="btn btn-primary btn-lg block mt-3" type="submit">Send Message</button>
+         </div>
+       </form>
+     </div>
+   </div>
+ </div>
+</section>
+
+<script type="text/javascript">
+ document.getElementById('contact-form').addEventListener('submit', function(event) {
+   event.preventDefault(); // Prevent the form from submitting the traditional way
+
+   // Send the form data using EmailJS
+   emailjs.sendForm('Nicholas011', 'Message_011', this)
+     .then(function() {
+       alert('Your message has been sent successfully!');
+     }, function(error) {
+       alert('Failed to send message. Please try again.');
+     });
+
+   // Optionally reset the form after submission
+   this.reset();
+ });
+</script>
+
+<!--footer-->
+
+<footer class="bg-dark p-2 text-center">
+<div class="container">
+<p class="text-white">All Rights Reserved @Nicholas KE</p>
+<div class="socials">
+ <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="bi bi-linkedin text-white mx-1"></i></a>
+ <a href="https://github.com/your-profile" target="_blank"><i class="bi bi-github text-white mx-1"></i></a>
+ <a href="https://wa.me/yourphonenumber" target="_blank"><i class="bi bi-whatsapp text-white mx-1"></i></a>
+</div>
+<!-- Back to Top Button -->
+<a href="#" class="btn btn-primary mt-3">Back to Top</a>
+</div>
+</footer>
 
   <!-- Add Bootstrap JavaScript (optional if using data- attributes) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -106,375 +459,6 @@
       interval: 2000
     });
   </script>
-
-  <!-------skills -->
-           <section id="skills" class="skills section-padding">
-             <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                     <div class="section-header text-center pb-2 mt-3">
-                       <h2>My Skills Closet</h2>
-                         <p class="desc"><br>
-                          I possess a strong foundation in digital marketing, content creation, and web development. With a particular emphasis on SEO optimization and social media management, I have honed my ability to drive online visibility and engagement. My expertise in these areas allows me to effectively create and implement strategies that help businesses achieve their marketing goals.</p> 
-                        </div>
-                        </div>
-                     </div><br> 
-                <div class="col-md-4">
-                  <div class="card skills-card">
-                    <div class="card-body">
-                      <h5 class="skills-heading">Web Development</h5>
-                      <p class="card-text">Languages: HTML, CSS3, JavaScript</p>
-                      <p class="card-text">Frameworks: Laravel, Bootstrap, Saas</p>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card skills-card">
-                    <div class="card-body">
-                      <h5 class="skills-heading">Database Management</h5>
-                      <p class="card-text">Excel, Microsoft Access</p>
-                      <div class="progress">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card skills-card">
-                    <div class="card-body">
-                      <h5 class="skills-heading">Software Development</h5>
-                      <p class="card-text">Languages: PHP , Java</p>
-                      <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </section>
-
-        <!-------services---->
-        <section id="services" class="services section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                       <div class="section-header text-center pb-2 mt-3">
-                         <h2>Our Services</h2>
-                           <p class="desc"><br>
-                        Learn the art of promoting businesses online with our Digital Marketing course. Explore SEO, social media, email marketing, and analytics.<br>
-                        Gain practical skills to create effective digital campaigns, boost brand visibility, and drive conversions in the ever-evolving digital landscape.</p> 
-                       </div>
-                    </div>
-                </div><br> 
-                <div class="row">
-                  <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-white text-center bg-dark pb-2" style="height: 520px;">
-                      <div class="card-body">
-                        <i class="bi bi-diagram-3-fill"></i>
-                         <h3 class="card-tittle">Digital Marketing</h3><br>
-                         <p class="lead">Digital marketing employs online channels like social media, SEO and email to engage audiences.
-                           Data-driven strategies target specific demographics, measure performance, enhance brand visibility and customer acquisition. The following are some of the digital marketing learning sites that will get you an edge in the  market.</p><br><br>                
-
-                            <button id="udemy" class="btn btn-secondary text-dark">Udemy</button>
-                            <button id="coursera" class="btn btn-info text-dark" >Coursera</button>
-                            <button id="alison" class="btn btn-primary text-dark">Alison</button>
-
-                            <!-----the three buttons script-->
-                    <script>
-                            document.getElementById("udemy").addEventListener("click", function() {
-                                window.location.href = "https://www.udemy.com/"; // Replace with the URL you want to open
-                            });
-
-                             document.getElementById("coursera").addEventListener("click", function() {
-                                window.location.href = "https://www.coursera.org/?cartId=337258529; "// Replace with the URL you want to open
-                            });
-
-                            document.getElementById("alison").addEventListener("click", function() {
-                                window.location.href =" https://alison.com/ "// Replace with the URL you want to open
-                            });
-
-                    </script>
-                      </div>
-                    </div>
-                  </div><br> 
-                  <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-white text-center bg-dark pb-2" style="height: 520px;">
-                      <div class="card-body">
-                        <i class="bi bi-eject-fill"></i>
-                         <h3 class="card-tittle">Software Development</h3><br>
-                         <p class="lead">Software development creates applications through planning, coding, and testing. 
-                          It ensures robust, secure, and reliable software, from mobile apps to complex enterprise systems, powering our digital world.The following are some of the website devops that will get you a  edge in the web development market.</p><br><br>   
-
-                            <button id="codeacademy" class="btn btn-secondary text-dark">Code Academy</button>
-                            <button id="freecodecamp" class="btn btn-info text-dark" >FreeCodeCamp</button>
-                            <button id="udacity" class="btn btn-primary text-dark">Udacity</button>
-
-                            <!-----the three buttons script-->
-                    <script>
-                            document.getElementById("codeacademy").addEventListener("click", function() {
-                                window.location.href = "https://www.codecademy.com/ "// Replace with the URL you want to open
-                            });
-
-                             document.getElementById("freecodecamp").addEventListener("click", function() {
-                                window.location.href = "https://www.freecodecamp.org/" // Replace with the URL you want to open
-                            });
-
-                            document.getElementById("udacity").addEventListener("click", function() {
-                                window.location.href = "https://www.udacity.com/ "// Replace with the URL you want to open
-                            });
-
-                    </script>
-
-
-                      </div>
-                    </div>
-                  </div><br> 
-                  <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-white text-center bg-dark pb-2" style="height: 520px;">
-                      <div class="card-body">
-                        <i class="bi bi-code"></i>
-                         <h3 class="card-tittle">Website Development</h3><br>
-                         <p class="lead"> Website development involves designing, coding, and maintaining websites. 
-                          It aims for responsive design, fast loading, and security while considering SEO for better visibility, delivering seamless user experiences.The following are some of the software learning platforms that will get you an edge in the software development market.</p><br> 
-                          
-                            <button id="inforworld" class="btn btn-secondary text-dark">Infoworld</button>
-                            <button id="devops" class="btn btn-info text-dark" >DevOPs.com</button>
-                            <button id="apiumhub" class="btn btn-primary text-dark">ApiumHub</button>
-
-                            <!-----the three buttons script-->
-                    <script>
-                            document.getElementById("inforworld").addEventListener("click", function() {
-                                window.location.href = "https://www.infoworld.com/"; // Replace with the URL you want to open
-                            });
-
-                             document.getElementById("devops").addEventListener("click", function() {
-                                window.location.href = "https://devops.com/"; // Replace with the URL you want to open
-                            });
-
-                            document.getElementById("apiumhub").addEventListener("click", function() {
-                                window.location.href = " https://apiumhub.com/"; // Replace with the URL you want to open
-                            });
-
-                    </script>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-------Portfolio---->
-
-       <section id="portfolio" class="portfolio section-padding">
-         <div class="container">
-           <div class="row">
-             <div class="col-md-12">
-               <div class="section-header text-center pb-2 mt-3">
-                  <h2>Our Projects</h2>
-                    <p class="desc">At Nicholas Ke, we deliver unparalleled excellence to learners embarking on transformative journeys in web development, software development, and digital marketing. <br>
-                      Our commitment to superior quality empowers students to excel in the dynamic world of technology and marketing. <br>
-                      Join us for an exceptional educational experience.</p>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-             <div class="col-12 col-md-12 col-lg-4">
-               <div class="card text-center bg-white pb-2 " style="height: 580px;">
-                 <div class="card-body text-dark">
-                   <div class="img-area mb-4">
-                     <img src="./images/beautydes.jpg" alt="" class="img-fluid">
-                   </div>
-                   <h3 class="card-tittle">NiKomatt- Wordpress(CMS) Website </h3>
-                    <p class="lead">Nikomatt is your one-stop shop for all things cycling. Whether you're a seasoned pro or just starting out, we offer a wide range of bicycles, accessories, and gear to suit your needs.  Explore our online store to discover the perfect ride for your adventure.</p><br>
-                     <button class="btn btn-primary tet-dark">Visit Site</button>
-                 </div>
-               </div>
-             </div>
       
-           <div class="col-12 col-md-12 col-lg-4">
-               <div class="card text-center bg-white pb-2" style="height: 580px;">
-                 <div class="card-body text-dark">
-                   <div class="img-area mb-4">
-                     <img src="./images/junior.jpg" alt="" class="img-fluid">
-                   </div>
-                   <h3 class="card-tittle">Fithub - Fitness Web App</h3>
-                    <p class="lead">FitHub is your all-in-one fitness companion. Our web app offers a seamless blend of e-commerce and personalized fitness guidance. Shop for top-quality fitness gear, access expert-crafted workout plans, and track your progress with detailed analytics. </p>
-                     <button class="btn btn-primary tet-dark">Learn More</button>
-                 </div>
-               </div>
-             </div>
-           
-            <div class="col-12 col-md-12 col-lg-4">
-               <div class="card text-center bg-white pb-2" style="height: 58b0px;">
-                 <div class="card-body text-dark">
-                   <div class="img-area mb-4">
-                     <img src="./images/webdes.jpg" alt="" class="img-fluid">
-                   </div>
-                   <h3 class="card-tittle">Nicholas KE Web DEvops </h3>
-                    <p class="lead">Indulge in the delectable world of Nicholas Ke Affiliate Marketing. Savor the taste of success as you partner with us to reap lucrative rewards.</p>
-                     <button class="btn btn-primary tet-dark" >Learn More</button>
-                 </div>
-               </div>
-             </div>
-         </div>
-       </section>
-
-        <!-------Team---->
-
-        <section id="team" class="team section-padding">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="section-header text-center pb-2 mt-3">
-                  <h2>Our Proficient Team</h2>
-                    <p class="desc">Nicholas Ke boasts an exceptional team of developers proficient in web and software development, as well as affiliate marketing. <br>
-                    Our experts, armed with cutting-edge skills, are the backbone of our innovation-driven success.</p>
-                     
-               </div>
-             </div>
-           </div>
-           <div class="row">
-             <div class="col-12 col-md-6 col-lg-3">
-               <div class="card text-center" style="height: 600px;">
-                 <div class="card-body">
-                   <img src="./images/nicholasmutinda.jpg" alt="" class="img-fluid rounded-circle">
-                     <h3 class="card-tittle py-2">Nicholas Mutinda</h3>
-                      <p class="card-text">Nicholas Mutinda is an accomplished full-stack developer known for crafting dynamic web applications with precision and creativity, demonstrating expertise in both frontend and backend development.</p><br>
-                        <p class="socials">
-                          <i class="bi bi-twitter-x text-dark mx-1 "></i>
-                           <i class="bi bi-linkedin text-dark mx-1"></i>
-                           <i class="bi bi-facebook text-dark mx-1 "></i>
-                           <i class="bi bi-instagram text-dark mx-1"></i>
-                        </p>
-                 </div>
-               </div>
-             </div>
-              <div class="col-12 col-md-6 col-lg-3">
-               <div class="card text-center" style="height: 600px;">
-                 <div class="card-body">
-                   <img src="./images/littlekris.jpg" alt="" class="img-fluid rounded-circle">
-                     <h3 class="card-tittle py-2">Little Kris</h3>
-                      <p class="card-text"> As a proficient data analyst, Little Kris possesses a sharp analytical mind. He skillfully extracts actionable insights from intricate datasets, contributing valuable knowledge to inform strategic decisions.</p><br>
-                        <p class="socials">
-                          <i class="bi bi-twitter-x text-dark mx-1 "></i>
-                           <i class="bi bi-linkedin text-dark mx-1"></i>
-                           <i class="bi bi-facebook text-dark mx-1 "></i>
-                           <i class="bi bi-instagram text-dark mx-1"></i>
-                        </p>
-                 </div>
-               </div>
-             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-               <div class="card text-center" style="height: 600px;">
-                 <div class="card-body">
-                   <img src="./images/sean.jpg" alt="" class="img-fluid rounded-circle">
-                     <h3 class="card-tittle py-2">Sean Mike</h3>
-                      <p class="card-text">A seasoned front-end developer, Sean excels at designing visually engaging and user-centric interfaces. With a knack for creativity and technical precision, he transforms ideas into captivating web experiences..</p><br>
-                        <p class="socials">
-                          <i class="bi bi-twitter-x text-dark mx-1 "></i>
-                           <i class="bi bi-linkedin text-dark mx-1"></i>
-                           <i class="bi bi-facebook text-dark mx-1 "></i>
-                           <i class="bi bi-instagram text-dark mx-1"></i>
-                        </p>
-                 </div>
-               </div>
-             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-               <div class="card text-center" style="height: 600px;">
-                 <div class="card-body">
-                   <img src="./images/nicholaske.jpg" alt="" class="img-fluid rounded-circle">
-                     <h3 class="card-tittle py-2">Nicholas Ke</h3>
-                      <p class="card-text"> A UI/UX design virtuoso, Nicholas Ke specializes in creating seamless, intuitive user experiences. His designs harmonize aesthetics with functionality, ensuring users navigate digital landscapes effortlessly and enjoyably.</p><br>
-                        <p class="socials">
-                          <i class="bi bi-twitter-x text-dark mx-1 "></i>
-                           <i class="bi bi-linkedin text-dark mx-1"></i>
-                           <i class="bi bi-facebook text-dark mx-1 "></i>
-                           <i class="bi bi-instagram text-dark mx-1"></i>
-                        </p>
-                 </div>
-               </div>
-             </div>
-           </div>
-          </div>
-        </section>
-
-          <!-----contact page-->
-          <section id="contact" class="contact section-padding">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="section-header text-center pb-2 mt-3">
-                    <h2>Contact Us</h2>
-                    <p class="desc">Welcome to Nicholas Ke's world of exclusive digital marketing courses, cutting-edge software and website development, and stunning UI/UX design services.<br>
-                      Reach out today to unlock your digital potential!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row m-0">
-                <div class="col-md-12 p-0 pt-4 pb-4">
-                  <form id="contact-form" class="bg-light p-4 m-auto">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="mb-3">
-                          <input type="text" class="form-control" name="from_name" required placeholder="Your Full Name">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-3">
-                          <input type="email" class="form-control" name="from_email" required placeholder="Your email here">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-3">
-                          <textarea rows="3" class="form-control" name="message" required placeholder="Your message here"></textarea>
-                        </div>
-                      </div>
-                      <button class="btn btn-primary btn-lg block mt-3" type="submit">Send Message</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <script type="text/javascript">
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault(); // Prevent the form from submitting the traditional way
-
-              // Send the form data using EmailJS
-              emailjs.sendForm('Nicholas011', 'Message_011', this)
-                .then(function() {
-                  alert('Your message has been sent successfully!');
-                }, function(error) {
-                  alert('Failed to send message. Please try again.');
-                });
-
-              // Optionally reset the form after submission
-              this.reset();
-            });
-          </script>
-       
-       <!--footer-->
-        
-       <footer class="bg-dark p-2 text-center">
-        <div class="container">
-          <p class="text-white">All Rights Reserved @Nicholas KE</p>
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="bi bi-linkedin text-white mx-1"></i></a>
-            <a href="https://github.com/your-profile" target="_blank"><i class="bi bi-github text-white mx-1"></i></a>
-            <a href="https://wa.me/yourphonenumber" target="_blank"><i class="bi bi-whatsapp text-white mx-1"></i></a>
-          </div>
-          <!-- Back to Top Button -->
-          <a href="#" class="btn btn-primary mt-3">Back to Top</a>
-        </div>
-      </footer>
-      
-    </body>
+  </body>
 </html>
