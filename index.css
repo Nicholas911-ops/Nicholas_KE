@@ -7,26 +7,64 @@
 .section-padding{
     padding: 40px 0;
 }
-.navbar-nav{
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
+.navbar-nav {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.navbar-light.navbar-brand{
-    color: #000;
-    font-size: 25px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    
-}
-.navbar-light.navbar-brand:focus ,
-.navbar-light.navbar-brand:hover{
-    color: #000;
 
+.navbar-light .navbar-brand {
+  color: #000; /* Set color for the brand */
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
-.navbar-light.navbar-brand.navbar-link{
-    color:#000
+
+/* Navbar Links: White and Lowercase */
+.navbar-nav .nav-link {
+  color: #fff;
+  text-transform:none;
+  margin-right: 15px;
 }
+
+.navbar-nav .nav-link:hover {
+  color: #ccc; /* Optional hover color */
+}
+
+/* Custom Toggler Button (optional for styling purposes) */
+.navbar-toggler {
+  border-color: transparent;
+}
+
+  /* Custom width for the offcanvas */
+  .custom-offcanvas {
+    width: 50%; /* Adjust this value to your preference */
+  }
+  
+  /* Optional: Customize offcanvas background color */
+  .offcanvas {
+    background-color: #f8f9fa; /* Light background color */
+  }
+
+  /* Optional: Customize the nav link colors */
+  .offcanvas .nav-link {
+    color: #000; /* Change to your desired link color */
+  }
+
+  .offcanvas .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+  }
+
+/* Customize the button background and icon color */
+.navbar-toggler.custom-toggler {
+  border-color: transparent; /* Set border color to transprarent */
+}
+
+.navbar-toggler.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* The SVG code inside the url() sets the icon to white. */
+}
+
 .logo-image{
     width: 81px;
     height: 17px;
@@ -74,7 +112,7 @@ section{
   }
  
   .social-icons a:hover i {
-    color: #007bff; /* Change color to blue on hover */
+    color: #ff009d; /* Change color to blue on hover */
   }
 
         /* Style for the "skills" section */
