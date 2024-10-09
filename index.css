@@ -36,10 +36,10 @@
   border-color: transparent;
 }
 
-  /* Custom width for the offcanvas */
-  .custom-offcanvas {
-    width: 50%; /* Adjust this value to your preference */
-  }
+.custom-offcanvas {
+  width: 50% !important; /* Ensure this takes precedence */
+}
+
   
   /* Optional: Customize offcanvas background color */
   .offcanvas {

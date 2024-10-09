@@ -64,23 +64,24 @@
   <div class="offcanvas-body">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#home" onclick="navigateAndClose('home')">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#portfolio" onclick="navigateAndClose('portfolio')">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#skills" onclick="navigateAndClose('skills')">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#services" onclick="navigateAndClose('services')">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact us</a>
+        <a class="nav-link" href="#contact" onclick="navigateAndClose('contact')">Contact us</a>
       </li>
     </ul>
   </div>
 </div>
+
 
   </div>
 </nav>
@@ -186,21 +187,6 @@
                  <button id="coursera" class="btn btn-info text-dark" >Coursera</button>
                  <button id="alison" class="btn btn-primary text-dark">Alison</button>
 
-                 <!-----the three buttons script-->
-         <script>
-                 document.getElementById("udemy").addEventListener("click", function() {
-                     window.location.href = "https://www.udemy.com/"; // Replace with the URL you want to open
-                 });
-
-                  document.getElementById("coursera").addEventListener("click", function() {
-                     window.location.href = "https://www.coursera.org/?cartId=337258529; "// Replace with the URL you want to open
-                 });
-
-                 document.getElementById("alison").addEventListener("click", function() {
-                     window.location.href =" https://alison.com/ "// Replace with the URL you want to open
-                 });
-
-         </script>
            </div>
          </div>
        </div><br> 
@@ -217,21 +203,6 @@
                  <button id="freecodecamp" class="btn btn-info text-dark" >FreeCodeCamp</button>
                  <button id="udacity" class="btn btn-primary text-dark">Udacity</button>
 
-                 <!-----the three buttons script-->
-         <script>
-                 document.getElementById("codeacademy").addEventListener("click", function() {
-                     window.location.href = "https://www.codecademy.com/ "// Replace with the URL you want to open
-                 });
-
-                  document.getElementById("freecodecamp").addEventListener("click", function() {
-                     window.location.href = "https://www.freecodecamp.org/" // Replace with the URL you want to open
-                 });
-
-                 document.getElementById("udacity").addEventListener("click", function() {
-                     window.location.href = "https://www.udacity.com/ "// Replace with the URL you want to open
-                 });
-
-         </script>
            </div>
          </div>
        </div><br> 
@@ -247,22 +218,6 @@
                  <button id="inforworld" class="btn btn-secondary text-dark">Infoworld</button>
                  <button id="devops" class="btn btn-info text-dark" >DevOPs.com</button>
                  <button id="apiumhub" class="btn btn-primary text-dark">ApiumHub</button>
-
-                 <!-----the three buttons script-->
-         <script>
-                 document.getElementById("inforworld").addEventListener("click", function() {
-                     window.location.href = "https://www.infoworld.com/"; // Replace with the URL you want to open
-                 });
-
-                  document.getElementById("devops").addEventListener("click", function() {
-                     window.location.href = "https://devops.com/"; // Replace with the URL you want to open
-                 });
-
-                 document.getElementById("apiumhub").addEventListener("click", function() {
-                     window.location.href = " https://apiumhub.com/"; // Replace with the URL you want to open
-                 });
-
-         </script>
 
            </div>
          </div>
@@ -447,23 +402,6 @@
  </div>
 </section>
 
-<script type="text/javascript">
- document.getElementById('contact-form').addEventListener('submit', function(event) {
-   event.preventDefault(); // Prevent the form from submitting the traditional way
-
-   // Send the form data using EmailJS
-   emailjs.sendForm('Nicholas011', 'Message_011', this)
-     .then(function() {
-       alert('Your message has been sent successfully!');
-     }, function(error) {
-       alert('Failed to send message. Please try again.');
-     });
-
-   // Optionally reset the form after submission
-   this.reset();
- });
-</script>
-
 <!--footer-->
 
 <footer class="bg-dark p-2 text-center">
@@ -479,9 +417,82 @@
 </div>
 </footer>
 
-  <!-- Add Bootstrap JavaScript  -->
-  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  
+  <!-- Add Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function navigateAndClose(event, sectionId) {
+  // Prevent default anchor behavior
+  event.preventDefault();
+
+  // Get the section to scroll to
+  const section = document.getElementById(sectionId);
+
+  // Smooth scroll to the section
+  section.scrollIntoView({ behavior: 'smooth' });
+
+  // Delay the closing of the offcanvas until after scrolling completes
+  setTimeout(() => {
+    // Close the offcanvas
+    let offcanvas = document.querySelector('.offcanvas');
+    let offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+    offcanvasInstance.hide();
+  }, 500); // Adjust timeout to fit scroll duration
+}
+
+// Example of adding click events to your external links
+document.getElementById("udemy").addEventListener("click", function() {
+  window.location.href = "https://www.udemy.com/"; // Corrected URL
+});
+
+document.getElementById("coursera").addEventListener("click", function() {
+  window.location.href = "https://www.coursera.org/"; // Corrected URL
+});
+
+document.getElementById("alison").addEventListener("click", function() {
+  window.location.href = "https://alison.com/"; // Corrected URL
+});
+
+document.getElementById("codeacademy").addEventListener("click", function() {
+  window.location.href = "https://www.codecademy.com/"; // Corrected URL
+});
+
+document.getElementById("freecodecamp").addEventListener("click", function() {
+  window.location.href = "https://www.freecodecamp.org/"; // Corrected URL
+});
+
+document.getElementById("udacity").addEventListener("click", function() {
+  window.location.href = "https://www.udacity.com/"; // Corrected URL
+});
+
+document.getElementById("inforworld").addEventListener("click", function() {
+  window.location.href = "https://www.infoworld.com/"; // Corrected URL
+});
+
+document.getElementById("devops").addEventListener("click", function() {
+  window.location.href = "https://devops.com/"; // Corrected URL
+});
+
+document.getElementById("apiumhub").addEventListener("click", function() {
+  window.location.href = "https://apiumhub.com/"; // Corrected URL
+});
+
+// Contact form submission using EmailJS
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting the traditional way
+
+  // Send the form data using EmailJS
+  emailjs.sendForm('Nicholas011', 'Message_011', this)
+    .then(function() {
+      alert('Your message has been sent successfully!');
+    }, function(error) {
+      alert('Failed to send message. Please try again.');
+    });
+
+  // Optionally reset the form after submission
+  this.reset();
+});
+</script>
 
   </body>
 </html>
